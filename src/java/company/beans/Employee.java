@@ -50,4 +50,9 @@ public class Employee {
 	public void setTel(String tel) {
 		this.tel = tel;
 	}
+	@Override
+	public String toString() {
+		return "Employee [ID=" + ID + ", login=" + login + ", password=" + password + ", name=" + name + ", surname="
+				+ surname + ", mail=" + mail + ", tel=" + tel + "]";
+	}
 }

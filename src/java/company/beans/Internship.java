@@ -46,6 +46,12 @@ public class Internship {
 	public void setEndDate(DateTime endDate) {
 		this.endDate = endDate;
 	}
+	@Override
+	public String toString() {
+		return "Internship [ID=" + ID + ", shortDescription=" + shortDescription + ", completeDescription="
+				+ completeDescription + ", responsibleMail=" + responsibleMail + ", startDate=" + startDate
+				+ ", endDate=" + endDate + "]";
+	}
 	
 
 }

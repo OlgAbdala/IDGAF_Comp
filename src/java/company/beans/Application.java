@@ -2,7 +2,12 @@ package company.beans;
 //To be included in the company only
 public class Application {
 	    
-	    public enum ApplicationStatus{
+	    @Override
+	public String toString() {
+		return "Application [ID=" + ID + ", studentMail=" + studentMail + ", internshipID=" + internshipID + ", status="
+				+ status + "]";
+	}
+		public enum ApplicationStatus{
 	        NEW,
 	        REJECTED,
 	        SUMMONED,

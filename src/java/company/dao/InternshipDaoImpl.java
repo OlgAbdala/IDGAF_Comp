@@ -16,9 +16,9 @@ import company.beans.Internship;
 
 public class InternshipDaoImpl implements InternshipDao {
 	private DAOFactory daoFactory;
-	private String SQL_SELECT_ALL_INTERNSHIPS="SELECT * FROM INTERNSHIPS";
-	private String SQL_SELECT_INTERNSHIPS_FROM_DATE="SELECT * FROM INTERNSHIPS WHERE startDate > ? AND endDate < ?";
-	private String SQL_SELECT_INTERNSHIP_FROM_ID="SELECT * FROM INTERNSHIPS WHERE ID=?";
+	private String SQL_SELECT_ALL_INTERNSHIPS="SELECT * FROM Internships";
+	private String SQL_SELECT_INTERNSHIPS_FROM_DATE="SELECT * FROM Internships WHERE startDate > ? AND endDate < ?";
+	private String SQL_SELECT_INTERNSHIP_FROM_ID="SELECT * FROM Internships WHERE ID=?";
 	
 	public InternshipDaoImpl(DAOFactory dao){
 		this.daoFactory=dao;
